@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backkk">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="398dp"
+        android:layout_height="53dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/arizonia"
+        android:gravity="center"
+        android:text="Hair and Beyond"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/wavy"
+        android:layout_width="260dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="78dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/wavyy" />
+
+    <ImageButton
+        android:id="@+id/curly"
+        android:layout_width="259dp"
+        android:layout_height="204dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wavy"
+        app:srcCompat="@drawable/curly" />
+
+    <ImageButton
+        android:id="@+id/coily"
+        android:layout_width="257dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curly"
+        app:srcCompat="@drawable/coily" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

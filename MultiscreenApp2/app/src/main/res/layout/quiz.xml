@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="362dp"
+        android:layout_height="331dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="180dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/calligraffitti"
+        android:gravity="center_horizontal"
+        android:text="Quiz"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="259dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Which of these apply to you?"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toTopOf="@+id/title" />
+
+    <Button
+        android:id="@+id/heat"
+        android:layout_width="320dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="I frequently use heat."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <Button
+        android:id="@+id/natural"
+        android:layout_width="320dp"
+        android:layout_height="59dp"
+        android:text="I'm transitioning to my natural texture."
+        app:layout_constraintStart_toStartOf="@+id/heat"
+        app:layout_constraintTop_toBottomOf="@+id/heat" />
+
+    <Button
+        android:id="@+id/neither"
+        android:layout_width="320dp"
+        android:layout_height="59dp"
+        android:text="Neither."
+        app:layout_constraintStart_toStartOf="@+id/natural"
+        app:layout_constraintTop_toBottomOf="@+id/natural" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientt">
+
+    <TextView
+        android:id="@+id/searchBody"
+        android:layout_width="388dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Select a Continent."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/europe"
+        android:layout_width="424dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBody"
+        app:srcCompat="@drawable/europe" />
+
+    <ImageButton
+        android:id="@+id/africa"
+        android:layout_width="416dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toTopOf="@+id/europe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchBody"
+        app:srcCompat="@drawable/africa" />
+
+    <ImageButton
+        android:id="@+id/asia"
+        android:layout_width="398dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/europe"
+        app:srcCompat="@drawable/asia" />
+
+    <ImageButton
+        android:id="@+id/australia"
+        android:layout_width="409dp"
+        android:layout_height="116dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asia"
+        app:srcCompat="@drawable/aussie" />
+
+    <ImageButton
+        android:id="@+id/na"
+        android:layout_width="414dp"
+        android:layout_height="112dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/australia"
+        app:srcCompat="@drawable/na" />
+
+    <ImageButton
+        android:id="@+id/sa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/na"
+        app:srcCompat="@drawable/sa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
