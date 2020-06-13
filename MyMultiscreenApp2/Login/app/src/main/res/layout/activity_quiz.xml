@@ -4,12 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradientt"
-    tools:context=".ui.login.NorthAmerica_Info">
+    tools:context=".ui.login.QuizActivity">
 
-    <SearchView
-        android:layout_width="408dp"
-        android:layout_height="61dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

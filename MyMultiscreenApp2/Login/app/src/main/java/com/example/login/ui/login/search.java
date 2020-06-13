@@ -19,6 +19,7 @@ public class search  extends AppCompatActivity {
         ImageButton aussie = findViewById(R.id.australia);
         ImageButton na = findViewById(R.id.na);
         ImageButton sa = findViewById(R.id.sa);
+        ImageButton quiz = findViewById(R.id.quiz);
 
         europe.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,30 +34,42 @@ public class search  extends AppCompatActivity {
                 Intent w = new Intent(getApplicationContext(), Africa_Info.class);
                 startActivity(w);
             }
-        });asia.setOnClickListener(new View.OnClickListener() {
+        });
+        asia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent w = new Intent(getApplicationContext(), Asia_Info.class);
                 startActivity(w);
             }
-        });na.setOnClickListener(new View.OnClickListener() {
+        });
+        na.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent w = new Intent(getApplicationContext(), NorthAmerica_Info.class);
                 startActivity(w);
             }
-        });sa.setOnClickListener(new View.OnClickListener() {
+        });
+        sa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent w = new Intent(getApplicationContext(), SouthAmerica_Info.class);
                 startActivity(w);
             }
-        });aussie.setOnClickListener(new View.OnClickListener() {
+        });
+        aussie.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent w = new Intent(getApplicationContext(), Australia_Info.class);
                 startActivity(w);
             }
         });
-    }
-}
+        quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent o = new Intent(getApplicationContext(), .class);
+                startActivity(o);
+
+            }
+
+        });
+    }}
