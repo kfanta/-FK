@@ -13,7 +13,7 @@ public class QuizActivity extends AppCompatActivity {
     TextView answerchoice2;
     TextView answerchoice3;
     TextView answerchoice4;
-    @Override
+    @Override //personality quiz
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
