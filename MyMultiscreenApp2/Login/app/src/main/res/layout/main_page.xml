@@ -83,11 +83,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/na"
                 app:srcCompat="@drawable/sa" />
 
-            <ImageButton
-                android:id="@+id/quiz"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/quiz" />
         </LinearLayout>
     </ScrollView>
 

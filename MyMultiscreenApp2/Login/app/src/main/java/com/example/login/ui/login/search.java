@@ -19,7 +19,7 @@ public class search  extends AppCompatActivity {
         ImageButton aussie = findViewById(R.id.australia);
         ImageButton na = findViewById(R.id.na);
         ImageButton sa = findViewById(R.id.sa);
-        ImageButton quiz = findViewById(R.id.quiz);
+
 
         europe.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,13 +63,7 @@ public class search  extends AppCompatActivity {
                 startActivity(w);
             }
         });
-        quiz.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent o = new Intent(getApplicationContext(), .class);
-                startActivity(o);
 
-            }
 
-        });
+
     }}
