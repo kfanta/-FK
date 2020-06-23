@@ -87,8 +87,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Nigeria));
         Uri gmmIntentUri = Uri.parse("google.streetview:cbll= 9.081999,8.675277");
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-      
-        startActivity(mapIntent);
+        mapIntent.setPackage("com.google.android.apps.maps");
+         if (mapIntent.resolveActivity(getPackageManager()) !=null) {
+             startActivity(mapIntent);
+         }
 
 
 
