@@ -26,4 +26,6 @@ public class QuizActivity extends AppCompatActivity {
         answerchoice3 = findViewById(R.id.answerchoice3);
         answerchoice4 = findViewById(R.id.answerchoice4);
     }
+
+
 }
