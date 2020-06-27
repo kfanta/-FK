@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.login">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -16,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".ui.login.BeforeLogin"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -31,13 +30,7 @@
 
         <activity
             android:name=".ui.login.MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
-        <activity android:name=".ui.login.Africa_Info" />
-        <activity android:name=".ui.login.NorthAmerica_Info" />
-        <activity android:name=".ui.login.SouthAmerica_Info" />
-        <activity android:name=".ui.login.Asia_Info" />
-        <activity android:name=".ui.login.Europe_Info" />
-        <activity android:name=".ui.login.Australia_Info" />
+            android:label="@string/title_activity_maps" />
         <activity android:name=".ui.login.search" />
         <activity
             android:name=".ui.login.LoginActivity"

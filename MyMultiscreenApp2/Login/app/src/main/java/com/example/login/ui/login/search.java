@@ -21,48 +21,6 @@ public class search  extends AppCompatActivity {
         ImageButton sa = findViewById(R.id.sa);
 
 
-        europe.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent w = new Intent(getApplicationContext(), Europe_Info.class);
-                startActivity(w);
-            }
-        });
-        africa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent w = new Intent(getApplicationContext(), Africa_Info.class);
-                startActivity(w);
-            }
-        });
-        asia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent w = new Intent(getApplicationContext(), Asia_Info.class);
-                startActivity(w);
-            }
-        });
-        na.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent w = new Intent(getApplicationContext(), NorthAmerica_Info.class);
-                startActivity(w);
-            }
-        });
-        sa.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent w = new Intent(getApplicationContext(), SouthAmerica_Info.class);
-                startActivity(w);
-            }
-        });
-        aussie.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent w = new Intent(getApplicationContext(), Australia_Info.class);
-                startActivity(w);
-            }
-        });
 
 
 

@@ -21,9 +21,6 @@ public class QuizActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
 
         Questions = findViewById(R.id.Questions);
-        answerchoice1 = findViewById(R.id.answerchoice1);
-        answerchoice2 = findViewById(R.id.answerchoice2);
-        answerchoice3 = findViewById(R.id.answerchoice3);
-        answerchoice4 = findViewById(R.id.answerchoice4);
+
     }
 }

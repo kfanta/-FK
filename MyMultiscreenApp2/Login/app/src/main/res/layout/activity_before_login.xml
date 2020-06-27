@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientt"
+    tools:context=".ui.login.BeforeLogin">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="415dp"
+        android:layout_height="82dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Next Steps..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="56sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="400dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/gradient"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="I know where I'm going"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="400dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/gradient"
+        android:fontFamily="@font/aclonica"
+        android:text="I want a travel suggestion!"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
