@@ -1,59 +1,63 @@
 package com.example.login.ui.login;
 
+import com.example.login.R;
+
 public class Question {
-    private String Question;
-    private String answerchoice1;
-    private String answerchoice2;
-    private String answerchoice3;
-    private String answerchoice4;
+    private String question;
+    private int pic1;
+    private int pic2;
+    private int pic3;
+    private int pic4;
 
-    public String getTitle() {
 
-        return Question;
-    }
-
-    public void setTitle(String Question) {
-        this.Question = Question;
-    }
-
-    public String getResponse1() {
-        return answerchoice1;
-    }
-
-    public void setResponse2(String answerchoice2) {
-        this.answerchoice2 = answerchoice2;
-    }
-
-    public String getResponse3() {
-        return answerchoice3;
-    }
-
-    public void setResponse2(String answerchoice4) {
-        this.answerchoice4 = answerchoice4;
-    }
-
-    public String getResponse3() {
-        return answerchoice4;
-    }
-
-    public void setResponse3(String response3) {
-        this.answerchoice4 = answerchoice4;
-    }
-
-    public String getResponse4() {
-        return response4;
-    }
-
-    public void setResponse4(String response4) {
-        this.response4 = response4;
-    }
-
-    public Question(String title, String response1, String response2, String response3, String response4) {
-        this.Question  = Question;
-        this.response1 = response1;
-        this.response2 = response2;
-        this.response3 = response3;
-        this.response4 = response4;
+    public Question(String question, int pic1, int pic2, int pic3, int pic4) {
+        this.question = question;
+        this.pic1 = pic1;
+        this.pic2 = pic2;
+        this.pic3 = pic3;
+        this.pic4 = pic4;
 
     }
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
+    public int getPic1() {
+        return pic1;
+    }
+
+    public void setPic1(int pic1) {
+        this.pic1 = pic1;
+    }
+
+    public int getPic2() {
+        return pic2;
+    }
+
+    public void setPic2(int pic2) {
+        this.pic2 = pic2;
+    }
+
+    public int getPic3() {
+        return pic3;
+    }
+
+    public void setPic3(int pic3) {
+        this.pic3 = pic3;
+    }
+
+    public int getPic4() {
+        return pic4;
+    }
+
+    public void setPic4(int pic4) {
+        this.pic4 = pic4;
+    }
+
+
 }
