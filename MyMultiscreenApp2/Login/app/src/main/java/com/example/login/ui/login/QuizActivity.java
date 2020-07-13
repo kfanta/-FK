@@ -19,6 +19,8 @@ public class QuizActivity extends AppCompatActivity {
    ImageButton answerchoice2;
    ImageButton answerchoice3;
    ImageButton answerchoice4;
+   int score = 0;
+   int index = 0;
    ArrayList <Question> questionlist;
    
 
@@ -29,10 +31,10 @@ public class QuizActivity extends AppCompatActivity {
 
      //
         Questions = findViewById(R.id.Questions);
-       ImageButton answerchoice1 = findViewById(R.id.answerchoice1);
-       ImageButton answerchoice2 = findViewById(R.id.answerchoice2);
-       ImageButton answerchoice3 = findViewById(R.id.answerchoice3);
-       ImageButton answerchoice4 = findViewById(R.id.answerchoice4);
+        answerchoice1 = findViewById(R.id.answerchoice1);
+        answerchoice2 = findViewById(R.id.answerchoice2);
+        answerchoice3 = findViewById(R.id.answerchoice3);
+        answerchoice4 = findViewById(R.id.answerchoice4);
         
 
 
@@ -52,7 +54,6 @@ public class QuizActivity extends AppCompatActivity {
         questionlist.add(q5);
         questionlist.add(q6);
         displayQuestion();
-        score= 0;
 
         answerchoice1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,43 +71,40 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
+      //  answerchoice3.setOnClickListener
+
 
 
     }
 
-    private void displayQuestion() {
-    }
-
-    public void displayQuestion; {
+    public void displayQuestion() {
 
         if( index < questionlist.size()){
             Questions.setText(questionlist.get(index).getQuestion());
-            pic.setImageResource(questionlist.get(index).getPic1());
+            answerchoice1.setImageResource(questionlist.get(index).getPic1());
+            answerchoice2.setImageResource()
             index ++;
         }
 
 
-        else{
-            if(score >= 60 && score <= 90){
+
+        else if(score >= 60 && score <= 90){
 ;
                 Questions.setText ("You are more chilled and laid back. You don’t like to be bothered but enjoy the sceneries of nature should consider. You should consider visiting: Europe");
-                answerchoice1.setImageResource();
             }
-        }
 
-        else{
-            if(score >= 90 && score <= 120 ){
+
+        else if(score >= 90 && score <= 120 ){
 
                 Questions.setText("Neuroticism: You tend to worry about a lot of things, moody, and anxious. You should consider visiting: Oceania and get your mind of things and learn about the wildlife");
 
             }
-        }
 
-        else{
-            if(score >= 120 && score <= 150){
+
+        else if(score >= 120 && score <= 150){
 
                 Questions.setText ("Agreeableness: You are very optimistic, nurturing, cooperative, and kind. You enjoy looking out for others and assisting anyone in need of help. You should consider visiting: South America");
-                
+
             }
         }
 
@@ -122,4 +120,4 @@ public class QuizActivity extends AppCompatActivity {
 
 
 
-}
+
