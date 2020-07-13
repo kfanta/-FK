@@ -52,7 +52,7 @@ public class QuizActivity extends AppCompatActivity {
         questionlist.add(q5);
         questionlist.add(q6);
         displayQuestion();
-        index score = 0;
+        score= 0;
 
         answerchoice1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,23 +89,35 @@ public class QuizActivity extends AppCompatActivity {
         else{
             if(score >= 60 && score <= 90){
 ;
-                Questions.setText ("You are more chilled and laid back. You don’t like to be bothered but enjoy the sceneries of nature should consider visiting: Europe");
+                Questions.setText ("You are more chilled and laid back. You don’t like to be bothered but enjoy the sceneries of nature should consider. You should consider visiting: Europe");
                 answerchoice1.setImageResource();
             }
         }
 
-        if( index < questionlist.size()){
-            Questions.setText(questionlist.get(index).getQuestion());
-            answerchoice1.setImageResource(answerchoice1.get(index).getanswerchoice3());
-            index ++;
-        }
         else{
-            if(score >= 90 && score <= 120){
+            if(score >= 90 && score <= 120 ){
 
-                Questions.setText ("");
-                answerchoice2.setImageResource();
+                Questions.setText("Neuroticism: You tend to worry about a lot of things, moody, and anxious. You should consider visiting: Oceania and get your mind of things and learn about the wildlife");
+
             }
         }
+
+        else{
+            if(score >= 120 && score <= 150){
+
+                Questions.setText ("Agreeableness: You are very optimistic, nurturing, cooperative, and kind. You enjoy looking out for others and assisting anyone in need of help. You should consider visiting: South America");
+                
+            }
+        }
+
+
+
+
+
+
+
+
+
     }
 
 
