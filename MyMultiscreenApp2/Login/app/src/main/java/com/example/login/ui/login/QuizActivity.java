@@ -71,9 +71,21 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-      //  answerchoice3.setOnClickListener
+        answerchoice3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                displayQuestion();
+                score += 30;
+            }
+        });
 
-
+        answerchoice4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                displayQuestion();
+                score += 40;
+            }
+        });
 
     }
 
@@ -82,7 +94,9 @@ public class QuizActivity extends AppCompatActivity {
         if( index < questionlist.size()){
             Questions.setText(questionlist.get(index).getQuestion());
             answerchoice1.setImageResource(questionlist.get(index).getPic1());
-            answerchoice2.setImageResource()
+            answerchoice2.setImageResource(questionlist.get(index).getPic2());
+            answerchoice3.setImageResource(questionlist.get(index).getPic3());
+            answerchoice4.setImageResource(questionlist.get(index).getPic4());
             index ++;
         }
 
@@ -97,15 +111,26 @@ public class QuizActivity extends AppCompatActivity {
         else if(score >= 90 && score <= 120 ){
 
                 Questions.setText("Neuroticism: You tend to worry about a lot of things, moody, and anxious. You should consider visiting: Oceania and get your mind of things and learn about the wildlife");
-
-            }
+        }
 
 
         else if(score >= 120 && score <= 150){
 
                 Questions.setText ("Agreeableness: You are very optimistic, nurturing, cooperative, and kind. You enjoy looking out for others and assisting anyone in need of help. You should consider visiting: South America");
+        }
 
-            }
+        else if(score >= 150 && score <= 180){
+            Questions.setText ("Extraversion: You are very outgoing, energetic, and enjoy meeting new people. You feel energized when around people and tend to make friends easily. You should consider visiting: Asia");
+        }
+
+        else if(score >= 180 && score<= 210){
+            Questions.setText("Conscientiousness: You are very organized and mindful of details. You like to plan ahead, work hard, and think of others. You should consider visiting: Africa");
+        }
+
+        else if(score >= 210 && score<= 240){
+            Questions.setText("Openness to Experience: You are curious, intelligent, and imaginative. High scorers tend to be eager to learn new things and experience new things. You should consider visiting: North America ");
+        }
+
         }
 
 
