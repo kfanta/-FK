@@ -123,11 +123,11 @@ public class QuizActivity extends AppCompatActivity {
             Questions.setText ("Extraversion: You are very outgoing, energetic, and enjoy meeting new people. You feel energized when around people and tend to make friends easily. You should consider visiting: Asia");
         }
 
-        else if(score >= 180 && score<= 210){
+        else if(score >= 180 && score <= 210){
             Questions.setText("Conscientiousness: You are very organized and mindful of details. You like to plan ahead, work hard, and think of others. You should consider visiting: Africa");
         }
 
-        else if(score >= 210 && score<= 240){
+        else if(score >= 210 && score <= 240){
             Questions.setText("Openness to Experience: You are curious, intelligent, and imaginative. High scorers tend to be eager to learn new things and experience new things. You should consider visiting: North America ");
         }
 
